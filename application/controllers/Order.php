@@ -7,7 +7,7 @@ class Order extends CI_Controller {
       /* URL Helper best in autoload */
       $this->load->helper('url');
   }
-
+ 
   public function pagoTPV($total, $order_id) {
     $this->load->library('redsys');
     $redsys = new Redsys;
